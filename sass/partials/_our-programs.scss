@@ -1,0 +1,23 @@
+
+
+#our-programs{
+    background-color: lighten(blue, 30%);
+    padding: 30px;
+    width: $width + 50px;
+    margin: 0px auto; 
+    // @include mainTransform(rotate(50deg));
+    @include boxShadow(0px 0px 20px 0px rgba(0,0,0,.8));
+    .programs{
+        text-align:center;
+        font-weight: 600;
+        font-family: $mainFont;
+        color: darken(red, 25%); 
+        @include mainTransform(rotate(-50deg));
+    }
+    .services{
+        @extend .programs;
+        @include mainTransform(rotate(0deg));
+        color: darken(aqua, 10%);
+        background-color: red + blue;
+    }
+}

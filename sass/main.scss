@@ -1,0 +1,24 @@
+$mainColor: red;
+$mainFont: verdana;
+$width: 500px;
+
+
+@mixin mainTransform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
+
+
+  @mixin boxShadow($property) {
+    box-shadow: $property;
+}
+
+@import './partials/our-programs';
+@import './partials/navbar';
+
+
+
+
+
+

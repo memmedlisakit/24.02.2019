@@ -1,0 +1,23 @@
+.navbar {
+    width: 100%;
+    background: grey;
+    ul {
+        color: white;
+        list-style-type: none;
+        padding: 0px;
+        text-align: right;
+        li {
+            display: inline-block;
+            padding: 10px 25px;
+            transition: all .3s linear;
+            &:hover {
+                background-color: aqua;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: $mainFont;
+            }
+        }
+    }
+}
